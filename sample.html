@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta chaset="UTF-8">
+	<title>Sample Form</title>
+	<style>
+		input{
+			display: block;
+		}
+		input:focus{
+			background: yellow;
+		}
+	</style>
+</head>
+<body>
+
+<form method="POST" action="https://formspree.io/mleal_19@yahoo.com">
+	<fieldset>
+		<label for="name"> Name:</label> <!-- labels are useful  -->
+		<input type="text" id="name" name="name" placeholder="name"> <!-- hardcoded the value -->
+		<!-- if I delete this then I break the click action -->
+		<label> Email: 
+			<input type="email" id="email" name="email" placeholder="email@umich.edu"> <!-- know which one of these is used by the server -->
+		</label><br/>
+		<label for="birth">Date of birth:</label>
+		<input type="date" id="birth"><br>
+		Password: <input type="password"> 
+		Phone Number: <input type="tel" placeholder="phone number">
+		<input type="submit" value="save">
+	</fieldset>
+</form>
+</body>
+</html>	
